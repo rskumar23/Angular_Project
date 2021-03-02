@@ -1,0 +1,9 @@
+<!-- first add FormsModule in app.module.ts file -->
+<p>form-example works!</p>
+<form #sampleForm="ngForm" (ngSubmit)="getUserValues(sampleForm.value)">
+    <input type="text" ngModel name="username" placeholder="enter username"><br><br>
+    <input type="text" ngModel name="age" placeholder="enter age"><br><br>
+    <input type="text" ngModel name="address" placeholder="enter address"><br><br>
+    <input type="password" ngModel name="password" placeholder="enter password"><br><br>
+    <button>Get User Values</button>
+</form>
