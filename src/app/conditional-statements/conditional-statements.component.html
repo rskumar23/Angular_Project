@@ -1,0 +1,26 @@
+<p>conditional-statements works!</p>
+<!--if Else with bool <h1 *ngIf="show else elseBlock">
+    IF Block
+</h1> 
+<ng-template #elseBlock>
+<h1>Else block</h1>
+</ng-template> -->
+
+<!-- with string <h1 *ngIf="showMe =='yes'; then ifBlock else elseBlock">
+</h1> 
+<ng-template #ifBlock>
+    <h1>If block</h1>
+    </ng-template>
+<ng-template #elseBlock>
+<h1>Else block</h1>
+</ng-template> -->
+<!-- if else -->
+<ng-template [ngIf]="color=='red'">
+    <h1>Red</h1>
+</ng-template>
+<ng-template [ngIf]="color=='green'">
+    <h1>Green</h1>
+</ng-template>
+<ng-template [ngIf]="color=='blue'">
+    <h1>Blue</h1>
+</ng-template>
